@@ -1,0 +1,109 @@
+                * {
+                    margin: 0;
+                    padding: 0;
+                    outline: 0;
+                    box-sizing: border-box;
+                }
+                
+                a {
+                    text-decoration: none;
+                }
+                
+                .menu__link {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 22px;
+                    padding: 40px 20px;
+                    color: #FFFFFF;
+                }
+                
+                body {
+                    background-color: #08101e;
+                }
+                
+                header {
+                    background-color: #0a121f;
+                    height: 100px;
+                    margin-bottom: 160px;
+                }
+                
+                .title1 {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 55px;
+                    line-height: 130%;
+                    color: #FFFFFF;
+                }
+                
+                .title3 {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 160%;
+                    text-transform: uppercase;
+                    color: #3A68B8;
+                }
+                
+                .main_heading {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 55px;
+                    line-height: 130%;
+                    color: #FFFFFF;
+                    margin-bottom: 10px;
+                }
+                
+                .main_dc {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 160%;
+                    color: #FFFFFF;
+                    opacity: 0.7;
+                    margin-bottom: 10px;
+                }
+                
+                .index_button {
+                    padding: 15px 30px;
+                    background: #3A68B8;
+                    border-radius: 5px;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: #FFFFFF;
+                }
+                
+                .container {
+                    width: 1146px;
+                    margin: 0 auto;
+                }
+                
+                .main_dc {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 160%;
+                    color: #FFFFFF;
+                    opacity: 0.7;
+                }
+                
+                .button_box {
+                    margin-bottom: 50px;
+                }
+                
+                footer {
+                    margin-top: 200px;
+                }
+                
+                .header_menu {
+                    padding: 39px;
+                }
