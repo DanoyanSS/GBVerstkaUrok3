@@ -105,5 +105,17 @@
                 }
                 
                 .header_menu {
-                    padding: 39px;
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                }
+                
+                .flex_box {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+                .content_left {
+                    width: 604px;
                 }
