@@ -100,7 +100,7 @@
                     margin-bottom: 50px;
                 }
                 
-                footer {
+                .logobar {
                     margin-top: 200px;
                 }
                 
@@ -118,4 +118,197 @@
                 
                 .content_left {
                     width: 604px;
+                }
+                
+                .title2 {
+                    width: 484px;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 130%;
+                    color: #FFFFFF;
+                }
+                
+                .content__dc {
+                    width: 460px;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 160%;
+                    color: #FFFFFF;
+                    opacity: 0.7;
+                }
+                
+                .content__information {
+                    margin-top: 150px;
+                    margin-bottom: 264px;
+                }
+                
+                .right__content {
+                    padding: 30px;
+                }
+                
+                .flex_content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: stretch;
+                    align-items: center;
+                }
+                
+                .item {
+                    width: 362px;
+                    background: #132035;
+                    border-radius: 10px;
+                    text-align: center;
+                    padding: 30px;
+                }
+                
+                .title4 {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 125%;
+                    text-align: center;
+                    color: #FFFFFF;
+                    opacity: 0.7;
+                }
+                
+                .content__blocks {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 160%;
+                    text-align: center;
+                    color: #FFFFFF;
+                    opacity: 0.7;
+                    padding: 30px;
+                }
+                
+                .left_content_image {
+                    width: 754px;
+                    background: #132035;
+                    border-radius: 10px;
+                    padding: 30px;
+                    text-align: center;
+                    margin-top: 30px;
+                }
+                
+                .flex_content_block {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: stretch;
+                }
+                
+                .right_content_image {
+                    margin-top: 30px;
+                }
+                
+                .margin_bott {
+                    margin-bottom: 30px;
+                }
+                
+                .image_about2 {
+                    width: 573px;
+                }
+                
+                .content_bottom {
+                    margin-top: 243px;
+                }
+                
+                .content__bottom {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 160%;
+                    color: #FFFFFF;
+                    opacity: 0.7;
+                    padding: 10px;
+                }
+                
+                .content_block_bottom {
+                    margin-top: 30px;
+                }
+                
+                .centre_content {
+                    align-self: center;
+                }
+                
+                .footer {
+                    margin-top: 221px;
+                    background-color: #0a121f;
+                    backdrop-filter: blur(100px);
+                    border-radius: 10px;
+                    padding: 48px;
+                }
+                
+                .title5 {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #FFFFFF;
+                }
+                
+                .block_contacts {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #FFFFFF;
+                    text-indent: 10px;
+                }
+                
+                .block_logos {
+                    color: #FFFFFF;
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                .information {
+                    display: flex;
+                    margin-top: 33px;
+                }
+                
+                .title6 {
+                    margin: 1px;
+                }
+                
+                .footer_about {
+                    width: 261px;
+                    font-family: 'Roboto';
+                    font-style: italic;
+                    font-weight: 100;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #FFFFFF;
+                    opacity: 0.6;
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                    margin-top: 33px;
+                }
+                
+                .footer_about_right {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #FFFFFF;
+                    order: 0;
+                    flex-grow: 0;
+                    margin-top: 33px;
+                }
+                
+                .block_logos_twitt_in_you {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 24px;
                 }
