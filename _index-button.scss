@@ -1,0 +1,18 @@
+.index_button {
+    padding: 15px 30px;
+    background: $button-color;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+}
+
+.index_button:hover {
+    background-color: $button-hover-backgr-color;
+    border: 1px solid transparent;
+    color: $button-hover-color;
+}

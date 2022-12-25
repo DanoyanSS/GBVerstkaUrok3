@@ -1,7 +1,4 @@
-$site-width: 1146px;
-$button-color: #3A68B8;
-$button-hover-backgr-color: #FFFFFF;
-$button-hover-color: #08101e;
+@import "vars";
 * {
     margin: 0;
     padding: 0;
@@ -13,15 +10,28 @@ a {
     text-decoration: none;
 }
 
-.menu__link {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
+@mixin text-site($fw, $fs, $lh) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
     padding: 40px 20px;
-    color: #FFFFFF;
+    color: $colortext;
     border: 1px solid transparent;
+    font-family: "Open Sans";
+    font-style: normal;
+}
+
+@mixin text-h5($fw, $fs, $lh) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: $colortext;
+}
+
+.menu__link {
+    @include text-site(600, 16px, 22px);
 }
 
 .menu__link:hover {
@@ -34,84 +44,37 @@ body {
     background-color: #08101e;
 }
 
-header {
-    background-color: #0a121f;
-    height: 100px;
-    margin-bottom: 160px;
-}
-
+@import "header";
 .title1 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 55px;
-    line-height: 130%;
-    color: #FFFFFF;
+    @include text-site(800, 55px, 130%);
 }
 
 .title3 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 160%;
+    @include text-site(600, 18px, 160%);
     text-transform: uppercase;
     color: #3A68B8;
 }
 
 .main_heading {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 55px;
-    line-height: 130%;
-    color: #FFFFFF;
+    @include text-site(800, 55px, 130%);
     margin-bottom: 40px;
     margin-top: 10px;
 }
 
 .main_dc {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 160%;
-    color: #FFFFFF;
+    @include text-site(600, 18px, 160%);
     opacity: 0.7;
     margin-bottom: 50px;
 }
 
-.index_button {
-    padding: 15px 30px;
-    background: $button-color;
-    border-radius: 5px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 27px;
-    color: #FFFFFF;
-    border: 1px solid transparent;
-}
-
-.index_button:hover {
-    background-color: $button-hover-backgr-color;
-    border: 1px solid transparent;
-    color: $button-hover-color;
-}
-
+@import "index-button";
 .container {
     width: $site-width;
     margin: 0 auto;
 }
 
 .main_dc {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 160%;
-    color: #FFFFFF;
+    @include text-site(600, 18px, 160%);
     opacity: 0.7;
 }
 
@@ -147,22 +110,12 @@ header {
 
 .title2 {
     width: 484px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 130%;
-    color: #FFFFFF;
+    @include text-site(700, 40px, 130%);
 }
 
 .content__dc {
     width: 460px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 160%;
-    color: #FFFFFF;
+    @include text-site(600, 16px, 160%);
     opacity: 0.7;
 }
 
@@ -191,24 +144,13 @@ header {
 }
 
 .title4 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 125%;
-    text-align: center;
-    color: #FFFFFF;
+    @include text-site(700, 25px, 125%);
     opacity: 0.7;
 }
 
 .content__blocks {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 160%;
+    @include text-site(600, 16px, 160%);
     text-align: center;
-    color: #FFFFFF;
     opacity: 0.7;
     padding: 30px;
 }
@@ -245,12 +187,7 @@ header {
 }
 
 .content__bottom {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 160%;
-    color: #FFFFFF;
+    @include text-site(600, 16px, 160%);
     opacity: 0.7;
     padding: 10px;
 }
@@ -272,21 +209,11 @@ header {
 }
 
 .title5 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
+    @include text-h5(500, 16px, 19px);
 }
 
 .block_contacts {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
+    @include text-h5(500, 14px, 16px);
     text-indent: 10px;
 }
 
@@ -297,7 +224,7 @@ header {
 
 .fa,
 .fas {
-    color: #FFFFFF;
+    color: $colortext;
 }
 
 .information {
@@ -311,12 +238,7 @@ header {
 
 .footer_about {
     width: 261px;
-    font-family: 'Roboto';
-    font-style: italic;
-    font-weight: 100;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
+    @include text-h5(100, 14px, 16px);
     opacity: 0.6;
     flex: none;
     order: 0;
@@ -325,12 +247,7 @@ header {
 }
 
 .footer_about_right {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
+    @include text-h5(500, 14px, 16px);
     order: 0;
     flex-grow: 0;
     margin-top: 33px;
