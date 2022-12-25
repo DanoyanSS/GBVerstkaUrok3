@@ -14,7 +14,6 @@ a {
     font-weight: $fw;
     font-size: $fs;
     line-height: $lh;
-    padding: 40px 20px;
     color: $colortext;
     border: 1px solid transparent;
     font-family: "Open Sans";
@@ -32,6 +31,7 @@ a {
 
 .menu__link {
     @include text-site(600, 16px, 22px);
+    padding: 40px 20px;
 }
 
 .menu__link:hover {

@@ -13,11 +13,11 @@ a {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  padding: 40px 20px;
   color: #FFFFFF;
   border: 1px solid transparent;
   font-family: "Open Sans";
   font-style: normal;
+  padding: 40px 20px;
 }
 
 .menu__link:hover {
@@ -40,7 +40,6 @@ header {
   font-weight: 800;
   font-size: 55px;
   line-height: 130%;
-  padding: 40px 20px;
   color: #FFFFFF;
   border: 1px solid transparent;
   font-family: "Open Sans";
@@ -51,7 +50,6 @@ header {
   font-weight: 600;
   font-size: 18px;
   line-height: 160%;
-  padding: 40px 20px;
   color: #FFFFFF;
   border: 1px solid transparent;
   font-family: "Open Sans";
@@ -64,7 +62,6 @@ header {
   font-weight: 800;
   font-size: 55px;
   line-height: 130%;
-  padding: 40px 20px;
   color: #FFFFFF;
   border: 1px solid transparent;
   font-family: "Open Sans";
@@ -77,7 +74,6 @@ header {
   font-weight: 600;
   font-size: 18px;
   line-height: 160%;
-  padding: 40px 20px;
   color: #FFFFFF;
   border: 1px solid transparent;
   font-family: "Open Sans";
@@ -90,13 +86,17 @@ header {
   padding: 15px 30px;
   background: #3A68B8;
   border-radius: 5px;
-  font-family: "Open Sans";
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 27px;
   color: #FFFFFF;
   border: 1px solid transparent;
+  font-family: "Open Sans";
+  font-style: normal;
+  border: 1px solid transparent;
+}
+.index_button__red {
+  background-color: rgb(238, 9, 9);
 }
 
 .index_button:hover {
@@ -114,7 +114,6 @@ header {
   font-weight: 600;
   font-size: 18px;
   line-height: 160%;
-  padding: 40px 20px;
   color: #FFFFFF;
   border: 1px solid transparent;
   font-family: "Open Sans";
@@ -157,7 +156,6 @@ header {
   font-weight: 700;
   font-size: 40px;
   line-height: 130%;
-  padding: 40px 20px;
   color: #FFFFFF;
   border: 1px solid transparent;
   font-family: "Open Sans";
@@ -169,7 +167,6 @@ header {
   font-weight: 600;
   font-size: 16px;
   line-height: 160%;
-  padding: 40px 20px;
   color: #FFFFFF;
   border: 1px solid transparent;
   font-family: "Open Sans";
@@ -205,7 +202,6 @@ header {
   font-weight: 700;
   font-size: 25px;
   line-height: 125%;
-  padding: 40px 20px;
   color: #FFFFFF;
   border: 1px solid transparent;
   font-family: "Open Sans";
@@ -217,7 +213,6 @@ header {
   font-weight: 600;
   font-size: 16px;
   line-height: 160%;
-  padding: 40px 20px;
   color: #FFFFFF;
   border: 1px solid transparent;
   font-family: "Open Sans";
@@ -262,7 +257,6 @@ header {
   font-weight: 600;
   font-size: 16px;
   line-height: 160%;
-  padding: 40px 20px;
   color: #FFFFFF;
   border: 1px solid transparent;
   font-family: "Open Sans";
