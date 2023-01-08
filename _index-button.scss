@@ -7,6 +7,7 @@
     &__red {
         background-color: rgb(238, 9, 9);
     }
+    transition: background-color 1s;
 }
 
 .index_button:hover {

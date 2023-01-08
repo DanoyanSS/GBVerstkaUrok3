@@ -1,4 +1,5 @@
 @import "vars";
+@import "key-frames";
 * {
     margin: 0;
     padding: 0;
@@ -32,6 +33,7 @@ a {
 .menu__link {
     @include text-site(600, 16px, 22px);
     padding: 40px 20px;
+    transition: background-color 500ms;
 }
 
 .menu__link:hover {
@@ -84,6 +86,11 @@ body {
 
 .logobar {
     margin-top: 200px;
+}
+
+.jello-horizontal:hover {
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
 }
 
 .header_menu {
@@ -156,7 +163,7 @@ body {
 }
 
 .left_content_image {
-    width: 754px;
+    width: 66%;
     background: #132035;
     border-radius: 10px;
     padding: 30px;

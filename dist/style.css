@@ -1,3 +1,63 @@
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +70,15 @@ a {
 }
 
 .menu__link {
-  font-family: "Open Sans";
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  padding: 40px 20px;
   color: #FFFFFF;
   border: 1px solid transparent;
+  font-family: "Open Sans";
+  font-style: normal;
+  padding: 40px 20px;
+  transition: background-color 500ms;
 }
 
 .menu__link:hover {
@@ -37,42 +98,47 @@ header {
 }
 
 .title1 {
-  font-family: "Open Sans";
-  font-style: normal;
   font-weight: 800;
   font-size: 55px;
   line-height: 130%;
   color: #FFFFFF;
+  border: 1px solid transparent;
+  font-family: "Open Sans";
+  font-style: normal;
 }
 
 .title3 {
-  font-family: "Open Sans";
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 160%;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  font-family: "Open Sans";
+  font-style: normal;
   text-transform: uppercase;
   color: #3A68B8;
 }
 
 .main_heading {
-  font-family: "Open Sans";
-  font-style: normal;
   font-weight: 800;
   font-size: 55px;
   line-height: 130%;
   color: #FFFFFF;
+  border: 1px solid transparent;
+  font-family: "Open Sans";
+  font-style: normal;
   margin-bottom: 40px;
   margin-top: 10px;
 }
 
 .main_dc {
-  font-family: "Open Sans";
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 160%;
   color: #FFFFFF;
+  border: 1px solid transparent;
+  font-family: "Open Sans";
+  font-style: normal;
   opacity: 0.7;
   margin-bottom: 50px;
 }
@@ -81,13 +147,18 @@ header {
   padding: 15px 30px;
   background: #3A68B8;
   border-radius: 5px;
-  font-family: "Open Sans";
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 27px;
   color: #FFFFFF;
   border: 1px solid transparent;
+  font-family: "Open Sans";
+  font-style: normal;
+  border: 1px solid transparent;
+  transition: background-color 1s;
+}
+.index_button__red {
+  background-color: #ee0909;
 }
 
 .index_button:hover {
@@ -102,12 +173,13 @@ header {
 }
 
 .main_dc {
-  font-family: "Open Sans";
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 160%;
   color: #FFFFFF;
+  border: 1px solid transparent;
+  font-family: "Open Sans";
+  font-style: normal;
   opacity: 0.7;
 }
 
@@ -117,6 +189,11 @@ header {
 
 .logobar {
   margin-top: 200px;
+}
+
+.jello-horizontal:hover {
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
 }
 
 .header_menu {
@@ -143,22 +220,24 @@ header {
 
 .title2 {
   width: 484px;
-  font-family: "Open Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 130%;
   color: #FFFFFF;
+  border: 1px solid transparent;
+  font-family: "Open Sans";
+  font-style: normal;
 }
 
 .content__dc {
   width: 460px;
-  font-family: "Open Sans";
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 160%;
   color: #FFFFFF;
+  border: 1px solid transparent;
+  font-family: "Open Sans";
+  font-style: normal;
   opacity: 0.7;
 }
 
@@ -187,30 +266,31 @@ header {
 }
 
 .title4 {
-  font-family: "Open Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 125%;
-  text-align: center;
   color: #FFFFFF;
+  border: 1px solid transparent;
+  font-family: "Open Sans";
+  font-style: normal;
   opacity: 0.7;
 }
 
 .content__blocks {
-  font-family: "Open Sans";
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 160%;
-  text-align: center;
   color: #FFFFFF;
+  border: 1px solid transparent;
+  font-family: "Open Sans";
+  font-style: normal;
+  text-align: center;
   opacity: 0.7;
   padding: 30px;
 }
 
 .left_content_image {
-  width: 754px;
+  width: 66%;
   background: #132035;
   border-radius: 10px;
   padding: 30px;
@@ -241,12 +321,13 @@ header {
 }
 
 .content__bottom {
-  font-family: "Open Sans";
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 160%;
   color: #FFFFFF;
+  border: 1px solid transparent;
+  font-family: "Open Sans";
+  font-style: normal;
   opacity: 0.7;
   padding: 10px;
 }
@@ -308,7 +389,7 @@ header {
 .footer_about {
   width: 261px;
   font-family: "Roboto";
-  font-style: italic;
+  font-style: normal;
   font-weight: 100;
   font-size: 14px;
   line-height: 16px;

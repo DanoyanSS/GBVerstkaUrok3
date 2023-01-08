@@ -1,3 +1,49 @@
+@-webkit-keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +64,7 @@ a {
   font-family: "Open Sans";
   font-style: normal;
   padding: 40px 20px;
+  transition: background-color 500ms;
 }
 
 .menu__link:hover {
@@ -94,6 +141,7 @@ header {
   font-family: "Open Sans";
   font-style: normal;
   border: 1px solid transparent;
+  transition: background-color 1s;
 }
 .index_button__red {
   background-color: rgb(238, 9, 9);
@@ -127,6 +175,11 @@ header {
 
 .logobar {
   margin-top: 200px;
+}
+
+.jello-horizontal:hover {
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
 }
 
 .header_menu {
@@ -223,7 +276,7 @@ header {
 }
 
 .left_content_image {
-  width: 754px;
+  width: 66%;
   background: #132035;
   border-radius: 10px;
   padding: 30px;
