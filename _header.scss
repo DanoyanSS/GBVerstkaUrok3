@@ -1,5 +1,15 @@
 header {
     background-color: #0a121f;
-    height: 100px;
+    min-height: 100px;
     margin-bottom: 160px;
 }
+
+@media screen and (max-width:768px) {
+    header {
+        min-height: 20%;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {}
+
+@media screen and (max-width: 375px) {}
